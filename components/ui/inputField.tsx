@@ -1,5 +1,6 @@
+"use client";
 import { useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "./button";
 import {
   Card,
   CardContent,
@@ -7,9 +8,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "./ui/card";
-import { Textarea } from "./ui/textarea";
-import { Progress } from "./ui/progress";
+} from "./card";
+import { Textarea } from "./textarea";
+import { Progress } from "./progress";
 
 export function InputField() {
   const [description, setDescription] = useState("");

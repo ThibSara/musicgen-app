@@ -37,10 +37,10 @@ function MarqueeContent() {
 export default function HeroSection() {
   return (
     <div>
-      <div className="flex items-center text-white justify-center relative max-w-7xl mx-auto">
-        <Gradient className="absolute max-w-7xl mx-auto inset-0 z-0 rounded-4xl ring-1 ring-black/5 ring-inset mt-8" />
+      <div className="flex items-center text-white justify-center relative max-w-6xl mx-auto">
+        <Gradient className="absolute max-w-6xl mx-auto inset-0 z-0 rounded-4xl ring-1 ring-black/5 ring-inset mt-8" />
 
-        <div className="mt-12 max-w-7xl relative z-10">
+        <div className="mt-12 max-w-6xl relative z-10">
           <div className="p-6 md:p-12">
             <span
               className="text-4xl md:text-8xl font-bold flex items-center text-white"
