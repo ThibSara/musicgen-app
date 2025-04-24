@@ -1,6 +1,6 @@
 import { getAllEpisodes } from "@/lib/episodes";
-import { EpisodeEntry } from "./EpisodeEntry";
-import { PromptForm } from "./PromptForm";
+import { EpisodeEntry } from "./PromptSectionComponents/EpisodeEntry";
+import { PromptForm } from "./PromptSectionComponents/PromptForm";
 
 export default async function PromptSection() {
   const episodes = await getAllEpisodes();

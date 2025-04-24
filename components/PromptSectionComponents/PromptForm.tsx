@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "./ui/button";
-import { Textarea } from "./ui/textarea";
-import { TinyWaveFormIcon } from "./ui/TinyWaveFormIcon";
+import { Button } from "../ui/button";
+import { Textarea } from "../ui/textarea";
+import { TinyWaveFormIcon } from "../ui/TinyWaveFormIcon";
 
 export function PromptForm() {
   const [description, setDescription] = useState("");

@@ -1,9 +1,8 @@
 import { Container } from "./Container";
 import { EpisodePlayButton } from "./EpisodePlayButton";
-import Link from "next/link";
 import { type Episode } from "@/lib/episodes";
-import { PlayIcon } from "./playIcon";
-import { PauseIcon } from "./pauseIcon";
+import { PlayIcon } from "../ui/playIcon";
+import { PauseIcon } from "../ui/pauseIcon";
 
 export function EpisodeEntry({ episode }: { episode: Episode }) {
   let date = new Date(episode.published);
