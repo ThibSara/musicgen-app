@@ -17,7 +17,7 @@ export function EpisodeEntry({ episode }: { episode: Episode }) {
               playing={
                 <>
                   <PauseIcon className="h-2.5 w-2.5 fill-current" />
-                  <span aria-hidden="true">Listen</span>
+                  <span aria-hidden="true">Pause</span>
                 </>
               }
               paused={

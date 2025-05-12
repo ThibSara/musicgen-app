@@ -27,6 +27,7 @@ function formatHumanTime(seconds: number) {
 
 export function AudioPlayer() {
   let player = useAudioPlayer();
+
   let wasPlayingRef = useRef(false);
 
   let [currentTime, setCurrentTime] = useState<number | null>(null);
@@ -91,7 +92,6 @@ export function AudioPlayer() {
               player.pause();
             }}
           />
-
           {/* Additional controls */}
           <div className="flex items-center gap-4">
             <div className="flex items-center">
