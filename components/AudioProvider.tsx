@@ -166,6 +166,8 @@ export function useAudioPlayer(episode?: Episode) {
         player!.play(episode);
       },
       toggle() {
+        console.log("Toggling episode:", episode);
+
         player!.toggle(episode);
       },
       get playing() {

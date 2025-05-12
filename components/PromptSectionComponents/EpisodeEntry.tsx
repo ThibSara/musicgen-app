@@ -5,8 +5,6 @@ import { PlayIcon } from "../ui/playIcon";
 import { PauseIcon } from "../ui/pauseIcon";
 
 export function EpisodeEntry({ episode }: { episode: Episode }) {
-  let date = new Date(episode.published);
-
   return (
     <article aria-labelledby={`episode-${episode.id}-title`}>
       <Container>

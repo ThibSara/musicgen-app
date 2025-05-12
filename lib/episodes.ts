@@ -4,7 +4,6 @@ import { array, number, object, parse, string } from 'valibot'
 export interface Episode {
   id: number
   title: string
-  published: Date
   description: string
   content: string
   audio: {
@@ -19,7 +18,6 @@ export async function getAllEpisodes() {
       object({
         id: number(),
         title: string(),
-        published: number(),
         description: string(),
         content: string(),
         enclosures: array(
@@ -38,10 +36,9 @@ export async function getAllEpisodes() {
   let items = parse(FeedSchema, feed).items
 
   let episodes: Array<Episode> = items.map(
-    ({ id, title, description, content, enclosures, published }) => ({
+    ({ id, title, description, content, enclosures }) => ({
       id,
       title: `${id}: ${title}`,
-      published: new Date(published),
       description,
       content,
       audio: enclosures.map((enclosure) => ({

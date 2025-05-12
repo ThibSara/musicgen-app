@@ -1,5 +1,5 @@
 "use client";
-import { useAudioPlayer } from "@/components/PromptSectionComponents/AudioProvider";
+import { useAudioPlayer } from "@/components/AudioProvider";
 import { type Episode } from "@/lib/episodes";
 
 export function EpisodePlayButton({
@@ -13,7 +13,7 @@ export function EpisodePlayButton({
   paused: React.ReactNode;
 }) {
   let player = useAudioPlayer(episode);
-
+  console.log("player: ", player);
   return (
     <button
       type="button"
